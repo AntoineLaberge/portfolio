@@ -1,0 +1,121 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": ["plugin:prettier/recommended"],
+    "plugins": ["@typescript-eslint", "react", "react-hooks", "import"],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "project": ["./tsconfig.json", "./cypress/tsconfig.json"],
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "warnOnUnsupportedTypeScriptVersion": true
+    },
+    "rules": {
+      // This rule is a nice-to-have but it's causing issues in CI and on some devs' machines
+      // "prefer-enum-initializers": "error",
+      "default-case": "off",
+      "no-dupe-class-members": "off",
+      "import/order": [
+        "error",
+        {
+          "groups": [
+            "builtin",
+            "external",
+            "internal",
+            ["parent", "sibling"],
+            "index",
+            "object"
+          ],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "builtin",
+              "position": "before"
+            },
+            {
+              "pattern": "@(constants|config|generated|ui|utils)/**",
+              "group": "internal"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": ["react", "builtin"],
+          "newlines-between": "never",
+          "alphabetize": {
+            "order": "asc",
+            "caseInsensitive": true
+          }
+        }
+      ],
+      "no-array-constructor": "off",
+      "@typescript-eslint/no-array-constructor": "error",
+      "@typescript-eslint/no-namespace": "error",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        {
+          "functions": false,
+          "classes": false,
+          "variables": false,
+          "typedefs": false
+        }
+      ],
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "args": "none",
+          "argsIgnorePattern": "^_",
+          "ignoreRestSiblings": true
+        }
+      ],
+      "no-useless-constructor": "off",
+      "@typescript-eslint/no-useless-constructor": "error",
+      "react-hooks/exhaustive-deps": "error",
+      "react/forbid-foreign-prop-types": [
+        "error",
+        {
+          "allowInPropTypes": true
+        }
+      ],
+      "react/jsx-no-comment-textnodes": "error",
+      "react/jsx-no-duplicate-props": [
+        "error",
+        {
+          "ignoreCase": true
+        }
+      ],
+      "react/jsx-no-literals": "warn",
+      "react/jsx-no-target-blank": "error",
+      "react/jsx-no-undef": "error",
+      "react/jsx-pascal-case": [
+        "error",
+        {
+          "allowAllCaps": true,
+          "ignore": []
+        }
+      ],
+      "react/jsx-uses-react": "error",
+      "react/jsx-uses-vars": "error",
+      "react/no-danger-with-children": "error",
+      "react/no-direct-mutation-state": "error",
+      "react/no-is-mounted": "error",
+      "react/no-typos": "error",
+      "react/react-in-jsx-scope": "error",
+      "react/require-render-return": "error",
+      "react/style-prop-object": "error",
+      "@typescript-eslint/no-floating-promises": [
+        "error",
+        {
+          "ignoreIIFE": true
+        }
+      ],
+      "@typescript-eslint/require-await": "off",
+      "@typescript-eslint/restrict-template-expressions": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+  

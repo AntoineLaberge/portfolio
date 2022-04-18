@@ -1,8 +1,25 @@
+:root {
+  --portfolio-color-accent: #2196F3;
+  --portfolio-color-neutral: #f0f0f0;
+}
+
+@font-face {font-family: "BuenosAires";
+  src: url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.eot"); /* IE9*/
+  src: url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.woff2") format("woff2"), /* chrome、firefox */
+  url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.woff") format("woff"), /* chrome、firefox */
+  url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("./fonts/BuenosAires/604c3826d04854ecb7e53030f4acda4c.svg#BuenosAires-Regular") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "Montserrat";
+  src: url("./fonts/Monserrat/Montserrat-VariableFont_wght.ttf") format("truetype")
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto';
+  background-color: var(--portfolio-color-neutral);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +27,12 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  font-family: 'Montserrat';
+}
+
+span {
+  font-family: 'Montserrat';
 }
