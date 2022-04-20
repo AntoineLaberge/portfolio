@@ -1,0 +1,11 @@
+{
+    "language": {
+        "fr": "French",
+        "en": "English"
+    },
+    "navigation": {
+        "home": "Home",
+        "resume": "Resume",
+        "contactMe": "Contact me"
+    }
+}

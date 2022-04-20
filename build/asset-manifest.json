@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f1bb336b.css",
+    "main.js": "/static/js/main.20912a41.js",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
+    "static/media/svg": "/static/media/604c3826d04854ecb7e53030f4acda4c.afc1cf1e14a4a2035b47.svg",
+    "static/media/eot": "/static/media/604c3826d04854ecb7e53030f4acda4c.cc3ea82906968bfd3856.eot",
+    "static/media/ttf": "/static/media/604c3826d04854ecb7e53030f4acda4c.0516f2e00cf2a263a807.ttf",
+    "static/media/woff": "/static/media/604c3826d04854ecb7e53030f4acda4c.2434388a4cd69431483c.woff",
+    "static/media/woff2": "/static/media/604c3826d04854ecb7e53030f4acda4c.bb1700ffd494f6f3ed55.woff2",
+    "static/media/feeling-proud.svg": "/static/media/feeling-proud.64bcd5b33c8aeef96cd6e09f5b3d0cfd.svg",
+    "index.html": "/index.html",
+    "static/media/code.svg": "/static/media/code.7c89e23c93dcdc04bf64ed4404eeddb4.svg",
+    "static/media/menu.svg": "/static/media/menu.4574c67475c7690d3ee46a4dc7dbb175.svg",
+    "main.f1bb336b.css.map": "/static/css/main.f1bb336b.css.map",
+    "main.20912a41.js.map": "/static/js/main.20912a41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1bb336b.css",
+    "static/js/main.20912a41.js"
+  ]
+}
