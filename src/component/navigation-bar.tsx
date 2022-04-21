@@ -1,10 +1,12 @@
 import React, {useState} from 'react';
 import styled from '@emotion/styled';
-import {Button, Container, Drawer, useMediaQuery} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import {Button, Container} from '@mui/material';
 import {useTranslation} from 'react-i18next';
 import {Page} from '../App';
 import {ReactComponent as CodeIcon} from './code.svg';
-import {ReactComponent as MenuIcon} from './menu.svg';
+import MobileDrawer from './mobile-drawer';
+import {useIsMobile} from './responsive-viewports';
 
 const Grid = styled.div`
   display: grid;
@@ -48,26 +50,21 @@ const ButtonLabel = styled.span`
   font-weight: 400;
 `;
 
-const StyledMenuIcon = styled(MenuIcon)`
-  width: 50px;
-  height: auto;
-`;
+const StyledMenuButton = styled(Button)`
+  padding: 0;
+  margin: 0;
 
-const StyledDrawer = styled(Drawer)`
-  text-align: center;
-
-  span {
-    color: var(--portfolio-color-neutral);
-    margin: 20px 0;
-    font-size: 25px;
-    font-weight: 700;
+  svg {
+    width: 40px;
+    height: auto;
+    color: var(--portfolio-color-accent);
   }
 `;
 
 const NavigationBar: React.FC<{setPage: React.Dispatch<React.SetStateAction<Page>>}> = (props) => {
   const {t} = useTranslation(['common']);
 
-  const isMobile = useMediaQuery('(max-width: 600px)');
+  const isMobile = useIsMobile();
 
   const [openDrawer, setOpenDrawer] = useState<boolean>(false);
 
@@ -87,30 +84,10 @@ const NavigationBar: React.FC<{setPage: React.Dispatch<React.SetStateAction<Page
           <ButtonsContainer>
             {isMobile ? (
               <>
-                <Button disableRipple onClick={() => setOpenDrawer(true)}>
-                  <StyledMenuIcon />
-                </Button>
-                <StyledDrawer
-                  variant="temporary"
-                  anchor="right"
-                  open={openDrawer}
-                  PaperProps={{
-                    sx: {
-                      width: '100%',
-                      backgroundColor: 'var(--portfolio-color-accent)',
-                    },
-                  }}
-                >
-                  <span onClick={() => changePage(Page.Home)}>{t('common:navigation.home')}</span>
-
-                  <span onClick={() => changePage(Page.Resume)}>
-                    {t('common:navigation.resume')}
-                  </span>
-
-                  <span onClick={() => changePage(Page.Contact)}>
-                    {t('common:navigation.contactMe')}
-                  </span>
-                </StyledDrawer>
+                <StyledMenuButton disableRipple onClick={() => setOpenDrawer(true)}>
+                  <MenuIcon />
+                </StyledMenuButton>
+                <MobileDrawer openDrawer={openDrawer} changePage={changePage} />
               </>
             ) : (
               <>
