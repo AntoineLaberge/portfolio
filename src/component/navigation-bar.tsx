@@ -100,6 +100,9 @@ const NavigationBar: React.FC<{setPage: React.Dispatch<React.SetStateAction<Page
                 <StyledButton onClick={() => changePage(Page.Contact)}>
                   <ButtonLabel>{t('common:navigation.contactMe')}</ButtonLabel>
                 </StyledButton>
+                <StyledButton onClick={() => changePage(Page.Settings)}>
+                  <ButtonLabel>{t('common:navigation.settings')}</ButtonLabel>
+                </StyledButton>
               </>
             )}
           </ButtonsContainer>

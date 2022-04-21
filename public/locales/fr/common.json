@@ -1,11 +1,12 @@
 {
     "language": {
-        "fr": "Françaix",
+        "fr": "Français",
         "en": "Anglais"
     },
     "navigation": {
         "home": "Accueil",
         "resume": "CV",
-        "contactMe": "Contact"
+        "contactMe": "Contact",
+        "settings": "Réglages"
     }
 }

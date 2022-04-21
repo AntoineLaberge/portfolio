@@ -57,6 +57,10 @@ const MobileDrawer: React.FC<{openDrawer: boolean; changePage: (page: Page) => v
         <span onClick={() => props.changePage(Page.Contact)}>
           {t('common:navigation.contactMe')}
         </span>
+
+        <span onClick={() => props.changePage(Page.Settings)}>
+          {t('common:navigation.settings')}
+        </span>
       </StyledMenuList>
 
       <DrawerFooter>

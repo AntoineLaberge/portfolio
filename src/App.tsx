@@ -1,14 +1,15 @@
 import React, {useState} from 'react';
 import NavigationBar from './component/navigation-bar';
-import SelectLanguage from './component/select-language';
 import Contact from './page/contact';
 import Home from './page/home';
 import Resume from './page/resume';
+import Settings from './page/settings';
 
 export enum Page {
   Home = 'home',
   Resume = 'resume',
   Contact = 'contact',
+  Settings = 'settings',
 }
 
 const App: React.FC = () => {
@@ -22,6 +23,8 @@ const App: React.FC = () => {
         return <Resume />;
       case Page.Contact:
         return <Contact />;
+      case Page.Settings:
+        return <Settings />;
 
       default:
         throw new Error(`Couldn't render page ${page}`);
@@ -32,7 +35,6 @@ const App: React.FC = () => {
     <>
       <NavigationBar setPage={setPage} />
       {renderPage()}
-      <SelectLanguage />
     </>
   );
 };
