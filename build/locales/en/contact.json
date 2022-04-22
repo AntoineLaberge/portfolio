@@ -1,0 +1,11 @@
+{
+    "contactCard": {
+        "title": "Computer Engineering Student",
+        "text": "Do not hesitate to contact me to know more about my projects or for a future collaboration!",
+        "emailMe": "Email me",
+        "callMe": "Call me"
+    },
+    "linkCard": {
+        "title": "Professionnal links"
+    }
+}

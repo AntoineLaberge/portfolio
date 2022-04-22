@@ -1,0 +1,11 @@
+{
+    "contactCard": {
+        "title": "Étudiant en génie informatique",
+        "text": "N'hésitez pas à me contacter pour en savoir plus sur mes projets ou pour une future collaboration !",
+        "emailMe": "Envoyez-moi un courriel",
+        "callMe": "Appelez-moi"
+    },
+    "linkCard": {
+        "title": "Liens professionnels"
+    }
+}

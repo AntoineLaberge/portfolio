@@ -14,7 +14,7 @@ const ResumeContainer = styled.div`
   overflow: auto;
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 0 auto 20px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 `;
