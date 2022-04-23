@@ -10,7 +10,7 @@ const i18n = initializeI18next();
 ReactDOM.render(
   <React.StrictMode>
     <I18nextProvider i18n={i18n}>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>{'Loading...'}</div>}>
         <App />
       </Suspense>
     </I18nextProvider>

@@ -8,5 +8,11 @@
         "resume": "CV",
         "contactMe": "Contact",
         "settings": "Réglages"
+    },
+    "underConstruction": {
+        "text1": "Mon site est hors ligne pour le moment, car je travaille sur un nouveau design.",
+        "text2": "Je travaille très dur en coulisses pour créer un contenu incroyable.",
+        "text3": "Même avec le site hors ligne, je suis ouvert aux affaires. Vous voulez me contacter ? Vous pouvez le faire à l'adresse suivante :",
+        "text4": "À la prochaine !"
     }
 }

@@ -4,6 +4,7 @@ import Contact from './page/contact';
 import Home from './page/home';
 import Resume from './page/resume';
 import Settings from './page/settings';
+import UnderConstruction from './page/under-construction';
 
 export enum Page {
   Home = 'home',
@@ -13,6 +14,8 @@ export enum Page {
 }
 
 const App: React.FC = () => {
+  const underConstruction = true;
+
   const [page, setPage] = useState<Page>(Page.Home);
 
   const renderPage = () => {
@@ -33,8 +36,14 @@ const App: React.FC = () => {
 
   return (
     <>
-      <NavigationBar setPage={setPage} />
-      {renderPage()}
+      {underConstruction ? (
+        <UnderConstruction />
+      ) : (
+        <>
+          <NavigationBar setPage={setPage} />
+          {renderPage()}
+        </>
+      )}
     </>
   );
 };

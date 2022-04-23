@@ -8,5 +8,11 @@
         "resume": "Resume",
         "contactMe": "Contact me",
         "settings": "Settings"
+    },
+    "underConstruction": {
+        "text1": "My site is offline at the moment, because I am working on a new design.",
+        "text2": "I am working really hard behind the scenes to create amazing content.",
+        "text3": "Even with the site offline, I am open for business. Want to get in contact?",
+        "text4": "All the best for now!"
     }
 }
