@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import {useTranslation} from 'react-i18next';
 import {ReactComponent as FeelingProudIcon} from '../component/feeling-proud.svg';
 import PresentationSection from '../component/presentation-section';
-import SkillCard from '../component/skill-card';
+import SkillCard from '../component/skill-card/skill-card';
 
 const Container = styled.div`
   text-align: center;

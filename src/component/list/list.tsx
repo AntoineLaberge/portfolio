@@ -30,6 +30,7 @@ export const List = styled.ul`
   list-style-type: none;
   padding: 0;
   margin: 15px 0 0;
+  background-color: white;
 `;
 
 const ContentContainer = styled.div`

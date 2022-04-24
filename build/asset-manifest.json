@@ -1,26 +1,33 @@
 {
   "files": {
     "main.css": "/static/css/main.f1bb336b.css",
-    "main.js": "/static/js/main.a4b2d012.js",
+    "main.js": "/static/js/main.a7eb70f9.js",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.3068cdb43142f5625baf.ttf",
     "static/media/page2.png": "/static/media/page2.deaa6e220451bac6c3fd.png",
     "static/media/page1.png": "/static/media/page1.16147eee1a8cca303134.png",
     "static/media/svg": "/static/media/604c3826d04854ecb7e53030f4acda4c.afc1cf1e14a4a2035b47.svg",
+    "static/media/under-construction.svg": "/static/media/under-construction.25b3193290fdbc1ba48798e76351ab59.svg",
     "static/media/eot": "/static/media/604c3826d04854ecb7e53030f4acda4c.cc3ea82906968bfd3856.eot",
     "static/media/ttf": "/static/media/604c3826d04854ecb7e53030f4acda4c.0516f2e00cf2a263a807.ttf",
     "static/media/woff": "/static/media/604c3826d04854ecb7e53030f4acda4c.2434388a4cd69431483c.woff",
     "static/media/woff2": "/static/media/604c3826d04854ecb7e53030f4acda4c.bb1700ffd494f6f3ed55.woff2",
     "static/media/feeling-proud.svg": "/static/media/feeling-proud.64bcd5b33c8aeef96cd6e09f5b3d0cfd.svg",
+    "static/media/linux.svg": "/static/media/linux.cf827e30c6902751fc11b101e026b6a2.svg",
+    "static/media/bracket.svg": "/static/media/bracket.3aacec085a06ba1a1cabab22a71e3b08.svg",
+    "static/media/brush.svg": "/static/media/brush.da7906ec5ad8d474ac17ed0412701608.svg",
+    "static/media/code-window.svg": "/static/media/code-window.1f8c690c514f33b8debd4b5e6d672ebf.svg",
     "static/media/wave.svg": "/static/media/wave.c2d912ff62c1921ce9c397d92f9ffd2d.svg",
+    "static/media/apple.svg": "/static/media/apple.53bf5605844485b3dcbcb97d0af2ad93.svg",
+    "static/media/windows.svg": "/static/media/windows.782f9b0ca4349d514dfb01999b199164.svg",
     "index.html": "/index.html",
     "static/media/radio-button-selected.svg": "/static/media/radio-button-selected.798383c6e429f2b0381f594af0c0d698.svg",
     "static/media/code.svg": "/static/media/code.7c89e23c93dcdc04bf64ed4404eeddb4.svg",
-    "static/media/radio-button.svg": "/static/media/radio-button.f7b6911bc733aac629430157c1c506a0.svg",
+    "static/media/radio-button.svg": "/static/media/radio-button.d8641fb298248996ecd4302105a6a04d.svg",
     "main.f1bb336b.css.map": "/static/css/main.f1bb336b.css.map",
-    "main.a4b2d012.js.map": "/static/js/main.a4b2d012.js.map"
+    "main.a7eb70f9.js.map": "/static/js/main.a7eb70f9.js.map"
   },
   "entrypoints": [
     "static/css/main.f1bb336b.css",
-    "static/js/main.a4b2d012.js"
+    "static/js/main.a7eb70f9.js"
   ]
 }

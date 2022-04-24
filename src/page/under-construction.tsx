@@ -2,8 +2,8 @@ import React from 'react';
 import styled from '@emotion/styled';
 import {Button} from '@mui/material';
 import {useTranslation} from 'react-i18next';
-import {ReactComponent as FeelingProudIcon} from '../component/feeling-proud.svg';
 import {useIsMobile} from '../component/responsive-viewports';
+import {ReactComponent as UnderConstructionIcon} from '../component/under-construction.svg';
 import Wave from '../component/wave.svg';
 
 const Container = styled.div`
@@ -19,7 +19,7 @@ const Container = styled.div`
   background-attachment: fixed;
 `;
 
-const StyledFeelingProudIcon = styled(FeelingProudIcon)`
+const StyledUnderConstructionIcon = styled(UnderConstructionIcon)`
   width: 350px;
   height: 350px;
   margin: 50px 30px 0 0;
@@ -51,7 +51,7 @@ const UnderConstruction: React.FC = () => {
 
   return (
     <Container>
-      {!isMobile && <StyledFeelingProudIcon />}
+      {!isMobile && <StyledUnderConstructionIcon />}
       <TextContainer>
         <Title>{'Howdy!'}</Title>
         <Text>{t('common:underConstruction.text1')}</Text>
