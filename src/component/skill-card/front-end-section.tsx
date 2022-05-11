@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import {useTranslation} from 'react-i18next';
 import {ReactComponent as BrushIcon} from './brush.svg';
 
 const MAX_WIDTH = 768;
@@ -54,6 +55,8 @@ const LanguageSpan = styled.span`
 `;
 
 const FrontEndSection: React.FC = () => {
+  const {t} = useTranslation(['home']);
+
   const programmingLanguage = [
     'React / Native, ',
     'TypeScript, ',
@@ -63,29 +66,27 @@ const FrontEndSection: React.FC = () => {
     'Next.js',
   ];
 
-  const designTools = ['Figma', 'XCode'];
+  const designTools = ['Figma', 'XCode', 'Illustrator'];
 
   const devTools = ['Visual Studio Code', 'IntelliJ IDEA', 'Bootstrap'];
 
   return (
     <FrontEndContainer>
       <StyledBrushIcon />
-      <Title>{'Front-end'}</Title>
-      <Quote>
-        {'A user interface is like a joke. If you have to explain it, it’s not that good'}
-      </Quote>
+      <Title>{t('home:skillCardSection.frontEnd.title')}</Title>
+      <Quote>{t('home:skillCardSection.frontEnd.quote')}</Quote>
 
-      <SectionTitle>{'Language I speak'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.frontEnd.languageSpeaked')}</SectionTitle>
       {programmingLanguage.map((language) => (
         <LanguageSpan key={language}>{language}</LanguageSpan>
       ))}
 
-      <SectionTitle>{'Design tools I use'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.frontEnd.designTools')}</SectionTitle>
       {designTools.map((tool) => (
         <p key={tool}>{tool}</p>
       ))}
 
-      <SectionTitle>{'Dev tools I use'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.frontEnd.devTools')}</SectionTitle>
       {devTools.map((tool) => (
         <p key={tool}>{tool}</p>
       ))}

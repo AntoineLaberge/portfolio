@@ -28,7 +28,7 @@ const ButtonsContainer = styled.div`
   justify-self: end;
 `;
 
-const StyledButton = styled(Button)`
+export const StyledButton = styled(Button)`
   border-radius: 25px;
   border: 2px solid var(--portfolio-color-accent);
   padding: 4px 14px;
@@ -45,7 +45,7 @@ const StyledButton = styled(Button)`
   }
 `;
 
-const ButtonLabel = styled.span`
+export const ButtonLabel = styled.span`
   font-size: 16px;
   font-weight: 400;
 `;

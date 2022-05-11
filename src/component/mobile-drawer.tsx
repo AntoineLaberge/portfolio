@@ -28,7 +28,7 @@ const DrawerFooter = styled.div`
   text-align: center;
 
   p {
-    opacity: 0.66;
+    color: #fff;
   }
 `;
 
@@ -65,7 +65,7 @@ const MobileDrawer: React.FC<{openDrawer: boolean; changePage: (page: Page) => v
 
       <DrawerFooter>
         <p>{'Antoine Laberge'}</p>
-        <p>{'2022'}</p>
+        <p>{'\u00A9 2022'}</p>
       </DrawerFooter>
     </Drawer>
   );

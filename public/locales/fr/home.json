@@ -5,5 +5,40 @@
     "presentationSection": {
         "title": "Bonjour, je m'appelle Antoine. Enchanté de vous rencontrer.",
         "text": "Je suis étudiant à l'Université de Sherbrooke depuis maintenant 3 ans. Mon jeune parcours professionnel m'a permis de travailler avec plusieurs types de clients. Au cours de ces projets, j'ai su développer une écoute attentive des différents besoins et exigences, mon leadership, mon sens de l'initiative et ma capacité à travailler en équipe."
+    },
+    "projectSection": {
+        "title": "Mes projets",
+        "sectionInProgress": "Cette section est encore en cours d'élaboration. Revenez plus tard !",
+        "seeMore": "Voici quelques-uns de mes projets. Vous voulez en voir plus ?",
+        "button": {
+            "seeMore": "En savoir plus"
+        }
+    },
+    "footer": {
+        "greetings": "Merci de m'avoir lu !",
+        "copyRights": "\u00A9 2022 - Antoine Laberge - Tous droits réservés",
+        "linkTitle": "Liens"
+    },
+    "skillCardSection": {
+        "frontEnd": {
+            "title": "Front End",
+            "quote": "Une interface utilisateur est comme une blague. Si vous devez l'expliquer, c'est qu'elle n'est pas très bonne",
+            "languageSpeaked": "Langage parlé",
+            "designTools": "Outils de design que j'utilise",
+            "devTools": "Outils de développement que j'utilise"
+        },
+        "backEnd": {
+            "title": "Back End",
+            "quote": "Si je ne réussis pas au début, j'appelle cela la version 1.0",
+            "languageSpeaked": "Langage parlé",
+            "devTools": "Outils de développement que j'utilise"
+        },
+        "otherSkills": {
+            "title": "Autres compétences",
+            "quote": "Ce n'est pas un bug. C'est une fonctionnalité non documentée !",
+            "osFamiliar": "OS que je connais",
+            "managementTools": "Outils de gestion que j'utilise",
+            "otherTools": "Autres outils que j'utilise"
+        }
     }
 }

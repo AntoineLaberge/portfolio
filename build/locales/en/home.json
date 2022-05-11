@@ -5,5 +5,40 @@
     "presentationSection": {
         "title": "Hi, I'm Antoine. Nice to meet you.",
         "text": "I have been a student at the University of Sherbrooke for 3 years now. My young professional career has allowed me to work with several types of clients. During these projects, I knew how to develop an attentive listening to the different needs and requirements, my leadership, my sense of initiative and my ability to work in a team."
+    },
+    "projectSection": {
+        "title": "My projects",
+        "sectionInProgress": "This section is still a work in progress. Come again later!",
+        "seeMore": "Here are some of my works. Want to see more?",
+        "button": {
+            "seeMore": "See more"
+        }
+    },
+    "footer": {
+        "greetings": "Thanks for reading!",
+        "copyRights": "\u00A9 2022 - Antoine Laberge - All Rights Reserved",
+        "linkTitle": "Links"
+    },
+    "skillCardSection": {
+        "frontEnd": {
+            "title": "Front End",
+            "quote": "A user interface is like a joke. If you have to explain it, it’s not that good",
+            "languageSpeaked": "Language I speak",
+            "designTools": "Design tools I use",
+            "devTools": "Dev tools I use"
+        },
+        "backEnd": {
+            "title": "Back End",
+            "quote": "If at first I don’t succeed; I call it version 1.0",
+            "languageSpeaked": "Language I speak",
+            "devTools": "Dev tools I use"
+        },
+        "otherSkills": {
+            "title": "Other skills",
+            "quote": "It’s not a bug. It’s an undocumented feature!",
+            "osFamiliar": "OS I'm familiar with",
+            "managementTools": "Management tools I use",
+            "otherTools": "Other tools I use"
+        }
     }
 }

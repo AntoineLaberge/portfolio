@@ -1,8 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import {useTranslation} from 'react-i18next';
+import {Page} from '../App';
 import {ReactComponent as FeelingProudIcon} from '../component/feeling-proud.svg';
+import Footer from '../component/footer';
 import PresentationSection from '../component/presentation-section';
+import ProjectSection from '../component/project-section/project-section';
 import SkillCard from '../component/skill-card/skill-card';
 
 const Container = styled.div`
@@ -36,19 +39,28 @@ const SkillCardContainer = styled.div`
   margin-top: -50px;
 `;
 
-const Home: React.FC = () => {
+const Home: React.FC<{setPage: React.Dispatch<React.SetStateAction<Page>>}> = (props) => {
   const {t} = useTranslation(['home']);
 
   return (
     <Container>
       <Title>{t('home:degree')}</Title>
+
       <UniversityLabel>{t('home:university')}</UniversityLabel>
+
       <LocationLabel>{t('home:basedIn')}</LocationLabel>
+
       <StyledFeelingProudIcon />
+
       <PresentationSection />
+
       <SkillCardContainer>
         <SkillCard />
       </SkillCardContainer>
+
+      <ProjectSection />
+
+      <Footer setPage={props.setPage} />
     </Container>
   );
 };

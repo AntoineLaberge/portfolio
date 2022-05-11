@@ -27,6 +27,15 @@ const Title = styled.p`
 const StyledButton = styled(Button)`
   color: var(--portfolio-color-accent);
   text-transform: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+`;
+
+const ButtonLabel = styled.span`
+  font-size: 14px;
+  font-weight: 700;
 `;
 
 const ContactCard: React.FC = () => {
@@ -40,12 +49,14 @@ const ContactCard: React.FC = () => {
           <Title>{t('contact:contactCard.title')}</Title>
           {t('contact:contactCard.text')}
         </CardContent>
+
         <CardActions>
-          <StyledButton size="small" href="mailto:antoinelaberge16@gmail.com">
-            {t('contact:contactCard.emailMe')}
+          <StyledButton disableRipple size="small" href="mailto:antoinelaberge16@gmail.com">
+            <ButtonLabel>{t('contact:contactCard.emailMe')}</ButtonLabel>
           </StyledButton>
-          <StyledButton size="small" href="tel:+15147963971">
-            {t('contact:contactCard.callMe')}
+
+          <StyledButton disableRipple size="small" href="tel:+15147963971">
+            <ButtonLabel>{t('contact:contactCard.callMe')}</ButtonLabel>
           </StyledButton>
         </CardActions>
       </StyledCard>

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import styled from '@emotion/styled';
 import NavigationBar from './component/navigation-bar';
 import Contact from './page/contact';
 import Home from './page/home';
@@ -13,15 +14,20 @@ export enum Page {
   Settings = 'settings',
 }
 
+const AppContainer = styled.div`
+  position: relative;
+  min-height: 100vh;
+`;
+
 const App: React.FC = () => {
-  const underConstruction = true;
+  const underConstruction = false;
 
   const [page, setPage] = useState<Page>(Page.Home);
 
   const renderPage = () => {
     switch (page) {
       case Page.Home:
-        return <Home />;
+        return <Home setPage={setPage} />;
       case Page.Resume:
         return <Resume />;
       case Page.Contact:
@@ -39,10 +45,10 @@ const App: React.FC = () => {
       {underConstruction ? (
         <UnderConstruction />
       ) : (
-        <>
+        <AppContainer>
           <NavigationBar setPage={setPage} />
           {renderPage()}
-        </>
+        </AppContainer>
       )}
     </>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import {useTranslation} from 'react-i18next';
 import {ReactComponent as CodeWindowIcon} from './code-window.svg';
 
 const MAX_WIDTH = 768;
@@ -43,6 +44,8 @@ const LanguageSpan = styled.span`
 `;
 
 const BackEndSection: React.FC = () => {
+  const {t} = useTranslation(['home']);
+
   const programmingLanguage = [
     'C, ',
     'C++, ',
@@ -60,15 +63,15 @@ const BackEndSection: React.FC = () => {
   return (
     <BackEndContainer>
       <StyledCodeWindowIcon />
-      <Title>{'Back-end'}</Title>
-      <Quote>{'If at first I don’t succeed; I call it version 1.0'}</Quote>
+      <Title>{t('home:skillCardSection.backEnd.title')}</Title>
+      <Quote>{t('home:skillCardSection.backEnd.quote')}</Quote>
 
-      <SectionTitle>{'Language I speak'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.backEnd.languageSpeaked')}</SectionTitle>
       {programmingLanguage.map((language) => (
         <LanguageSpan key={language}>{language}</LanguageSpan>
       ))}
 
-      <SectionTitle>{'Dev tools I use'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.backEnd.devTools')}</SectionTitle>
       {devTools.map((tool) => (
         <p key={tool}>{tool}</p>
       ))}

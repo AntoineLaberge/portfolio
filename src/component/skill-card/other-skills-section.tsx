@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import {useTranslation} from 'react-i18next';
 import {ReactComponent as AppleIcon} from './apple.svg';
 import {ReactComponent as BracketIcon} from './bracket.svg';
 import {ReactComponent as LinuxIcon} from './linux.svg';
@@ -47,6 +48,8 @@ const StyledWindowsIcon = styled(WindowsIcon)`
 `;
 
 const OtherSkillsSection: React.FC = () => {
+  const {t} = useTranslation(['home']);
+
   const os = [<AppleIcon />, <StyledWindowsIcon />, <LinuxIcon />];
 
   const managementTools = ['GitHub', 'Trello', 'Jira', 'Microsoft Teams'];
@@ -56,20 +59,20 @@ const OtherSkillsSection: React.FC = () => {
   return (
     <OtherSkillsContainer>
       <StyledBracketIcon />
-      <Title>{'Other skills'}</Title>
-      <Quote>{'It’s not a bug. It’s an undocumented feature!'}</Quote>
+      <Title>{t('home:skillCardSection.otherSkills.title')}</Title>
+      <Quote>{t('home:skillCardSection.otherSkills.quote')}</Quote>
 
-      <SectionTitle>{`OS I'm familiar with`}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.otherSkills.osFamiliar')}</SectionTitle>
       {os.map((os, i) => (
         <span key={i}>{os}</span>
       ))}
 
-      <SectionTitle>{'Management tools I use'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.otherSkills.managementTools')}</SectionTitle>
       {managementTools.map((tool) => (
         <p key={tool}>{tool}</p>
       ))}
 
-      <SectionTitle>{'Other tools I use'}</SectionTitle>
+      <SectionTitle>{t('home:skillCardSection.otherSkills.otherTools')}</SectionTitle>
       {otherTools.map((tool) => (
         <p key={tool}>{tool}</p>
       ))}
